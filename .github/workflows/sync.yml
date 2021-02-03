@@ -2,7 +2,7 @@ name: Sync Fork
 
 on:
   schedule:
-    - cron: "0 2 20 * *" # every 30 minutes
+    - cron: "0 6 20 * *" # every 30 minutes
   workflow_dispatch: # on button click
 
 jobs:
@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: anatawa12/fork-sync-all-branches@v1
+      - uses: tgymnich/fork-sync@v1.3
         with:
           github_token: ${{ secrets.GH_TOKEN }}
