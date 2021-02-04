@@ -16,5 +16,3 @@ jobs:
           owner: freefq
           base: master
           head: master
-          auto_approve: true
-          personal_token: ${{ secrets.GH_TOKEN }}
